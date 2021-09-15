@@ -3,54 +3,45 @@ const app = express();
 
 let topTenMovies = [
     {
-        name: 'Harry Potter Series'
+        name: 'Harry Potter Series',
         year: '2001 - 2011'
-    }
-    
+    },
     {
-        name: 'Troy'
+        name: 'Troy',
         year: '2004'
-    }
-
+    },
     {
-        name: 'Aladdin'
+        name: 'Aladdin',
         year: '1992'
-    }
-
+    },
     {
-        name: 'Beauty and the Beast'
+        name: 'Beauty and the Beast',
         year: '1991'
-    }
-
+    },
     {
-        name: 'The Little Mermaid'
+        name: 'The Little Mermaid',
         year: '1989'
-    }
-
+    },
     {
-        name: 'Whiplash'
+        name: 'Whiplash',
         year: '2014'
-    }
-
+    },
     {
-        name: 'Tomb Raider'
+        name: 'Tomb Raider',
         year: '2018'
-    }
-
+    },
     {
-        name: 'Les Miserables'
+        name: 'Les Miserables',
         year: '2012'
-    }
-
+    },
     {
-        name: 'Silver Linings Playbook'
+        name: 'Silver Linings Playbook',
         year: '2012'
-    }
-
+    },
     {
-        name: 'House at the End of the Street'
+        name: 'House at the End of the Street',
         year: '2012'
-    }
+    },
 ];
 
 app.get('/movies', (req, res) => {
