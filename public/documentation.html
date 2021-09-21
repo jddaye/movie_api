@@ -4,10 +4,104 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Movie API</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 <body>
     <p>
         This API will provide users with access to information about various movies, directors, and genres based on an undecided theme/genre.
         Uesrs will be able to sign up, update their personal information, and create a list of their favorite movies.
     </p>
+
+	<table>
+		<tr>
+			<th>Business Logic</th>
+			<th>URL</th>
+			<th>HTTP</th>
+			<th>Req Body</th>
+			<th>Res Body</th>
+		</tr>
+
+		<tr>
+			<th>Get a list of movies</th>
+			<th>/movies</th>
+			<th>Get</th>
+			<th>None</th>
+			<th>A JSON object holding data about all the movies</th>
+		</tr>
+
+		<tr>
+			<th>Get data about a single movie by name</th>
+			<th>/movies/[Name]</th>
+			<th>Get</th>
+			<th>None</th>
+			<th>A JSON object holding data about a single movie, containing the name, director, and genre</th>
+		</tr>
+
+		<tr>
+			<th>Get data about a single director by name</th>
+			<th>/directors</th>
+			<th>Get</th>
+			<th>None</th>
+			<th>A JSON object holding data about a single director, containing a bio, birth year, and death year</th>
+		</tr>
+
+		<tr>
+			<th>Get data about a single genre</th>
+			<th>/genres</th>
+			<th>Get</th>
+			<th>None</th>
+			<th>A JSON object holding data about a single genre, containing a description</th>
+		</tr>
+
+		<tr>
+			<th>Add a user</th>
+			<th>/users</th>
+			<th>Post</th>
+			<th>A JSON object holding data about the student to add, structured like:
+				{
+					name: "ND4life",
+					favorites: "Napoleon Dynamite"
+				}
+			</th>
+			<th>A JSON object holding data about the user that was added, including an ID:
+				{
+					id:22,
+					name: "ND4life",
+					favorites: "Napoleon Dynamite"
+				}
+			</th>
+		</tr>
+
+		<tr>
+			<th>Update a user</th>
+			<th>/users/[Name]</th>
+			<th>Put</th>
+			<th>None</th>
+			<th>A text message indicating the user that was updated</th>
+		</tr>
+
+		<tr>
+			<th>Add movies to user's favorites</th>
+			<th>/users/[Name]/[Favorites]</th>
+			<th>Get</th>
+			<th>None</th>
+			<th>A JSON objecy holding data about the user's favorite movie</th>
+		</tr>
+
+		<tr>
+			<th>Remove movies from user's favorites</th>
+			<th>/users/[Name]/[Favorites]</th>
+			<th>Delete</th>
+			<th>None</th>
+			<th>A text message indicating whether the movie was successfully removed</th>
+		</tr>
+
+		<tr>
+			<th>Delete user account</th>
+			<th>/users/[Name]</th>
+			<th>Delete</th>
+			<th>None</th>
+			<th>A text message indicating whether the user was successfully removed</th>
+		</tr>
+	</table>
 </body>
