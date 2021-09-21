@@ -141,14 +141,14 @@ app.post('/users', (req, res) => {
 
 //Deletes a user from our list of users
 
-// app.delete('users/:name', (req, res) => {
-//     let user = users.find((user) => { return user.name === req.params.name });
-// });
+app.delete('users/:name', (req, res) => {
+    let user = users.find((user) => { return user.name === req.params.name });
 
-//     if (user) {
-//         users = users.filter((obj) => { return obj.name !== req.params.name });
-//         res.status(201).send('User ' + req.params.name + ' was deleted.');
-//     };
+    if (user) {
+        users = users.filter((obj) => { return obj.name !== req.params.name });
+        res.status(201).send('User ' + req.params.name + ' was deleted.');
+    };
+});
 
 //Adds a movie to the user's favorites
 
