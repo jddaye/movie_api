@@ -141,14 +141,14 @@ app.post('/users', (req, res) => {
 
 //Deletes a user from our list of users
 
-app.delete('users/:name', (req, res) => {
-    let user = users.find((user) => { return user.name === req.params.name });
-});
+// app.delete('users/:name', (req, res) => {
+//     let user = users.find((user) => { return user.name === req.params.name });
+// });
 
-    if (user) {
-        users = users.filter((obj) => { return obj.name !== req.params.name });
-        res.status(201).send('User ' + req.params.name + ' was deleted.');
-    };
+//     if (user) {
+//         users = users.filter((obj) => { return obj.name !== req.params.name });
+//         res.status(201).send('User ' + req.params.name + ' was deleted.');
+//     };
 
 //Adds a movie to the user's favorites
 
@@ -166,14 +166,14 @@ app.put('/users/:name/:favorites', (req, res) => {
 
 //Removes a movie from the user's favorites
 
-app.delete('/users/:name/:favorites', (req, res) => {
-    let user = users.find((user) => { return user.name === req.params.name });
+// app.delete('/users/:name/:favorites', (req, res) => {
+//     let user = users.find((user) => { return user.name === req.params.name });
 
-    if (user) {
-        users = users.filter((obj) => { return obj.favorites !== req.params.favorites });
-            res.status(201).send(req.params.favorites + ' was deleted.');
-    }
-});
+//     if (user) {
+//         users = users.filter((obj) => { return obj.favorites !== req.params.favorites });
+//             res.status(201).send(req.params.favorites + ' was deleted.');
+//     }
+// });
 
 
 
