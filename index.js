@@ -10,73 +10,49 @@ let movies = [
     {
         movie: 'Harry Potter and the Sorcerer"s Stone',
         director: 'Chris Columbus',
-        genre: {
-            'Fantasy',
-            'Adventure',
-        },
-    }
+        genre: 'Fantasy'
+    },
 
     {
         movie: 'Harry Potter and the Chamber of Secrets',
         director: 'Chris Columbus',
-        genre: {
-            'Fantasy',
-            'Adventure',
-        },
-    }
+        genre: 'Fantasy'
+    },
 
     {
         movie: 'Harry Potter and the Prisoner of Azkaban',
         director: 'Alfonso Cuarón',
-        genre: {
-            'Fantasy',
-            'Adventure',
-        },
-    }
+        genre: 'Fantasy'
+    },
 
     {
         movie: 'Harry Potter and the Goblet of Fire',
         director: 'Mike Newell',
-        genre: {
-            'Fantasy',
-            'Adventure',
-        },
-    }
+        genre: 'Fantasy'
+    },
 
     {
         movie: 'Harry Potter and the Order of the Phoenix',
         director: 'David Yates',
-        genre: {
-            'Fantasy',
-            'Adventure',
-        },
-    }
+        genre: 'Fantasy'
+    },
 
     {
         movie: 'Harry Potter and the Half-Blood Prince',
         director: 'David Yates',
-        genre: {
-            'Fantasy',
-            'Adventure',
-        },
-    }
+        genre: 'Fantasy'
+    },
 
     {
         movie: 'Harry Potter and the Deathly Hallows - Part 1',
         director: 'David Yates',
-        genre: {
-            'Fantasy',
-            'Adventure',
-        },
-    }
+        genre: 'Fantasy'
+    },
 
     {
         movie: 'Harry Potter and the Deathly Hallows - Part 2',
         director: 'David Yates',
-        genre: {
-            'Fantasy',
-            'Adventure',
-        },
+        genre: 'Fantasy'
     }
 ];
 
