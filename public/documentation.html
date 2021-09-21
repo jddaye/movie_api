@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Movie API</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" hred="css/style.css"
 	</head>
 <body>
     <p>
@@ -38,16 +38,32 @@
 		</tr>
 
 		<tr>
-			<th>Get data about a single director by name</th>
+			<th>Get a list of directors</th>
 			<th>/directors</th>
+			<th>Get</th>
+			<th>None</th>
+			<th>A JSON object holding data about all the directors</th>
+		</tr>
+
+		<tr>
+			<th>Get data about a single director by name</th>
+			<th>/directors/[Name]</th>
 			<th>Get</th>
 			<th>None</th>
 			<th>A JSON object holding data about a single director, containing a bio, birth year, and death year</th>
 		</tr>
 
 		<tr>
-			<th>Get data about a single genre</th>
+			<th>Get a list of genres</th>
 			<th>/genres</th>
+			<th>Get</th>
+			<th>None</th>
+			<th>A JSON object holding data about all the genres</th>
+		</tr>
+
+		<tr>
+			<th>Get data about a single genre</th>
+			<th>/genres/[Name]</th>
 			<th>Get</th>
 			<th>None</th>
 			<th>A JSON object holding data about a single genre, containing a description</th>
@@ -57,17 +73,17 @@
 			<th>Add a user</th>
 			<th>/users</th>
 			<th>Post</th>
-			<th>A JSON object holding data about the student to add, structured like:
+			<th>A JSON object holding data about the student to add, structured like: <br>
 				{
-					name: "ND4life",
-					favorites: "Napoleon Dynamite"
+					name: "ND4life", <br>
+					favorites: "Napoleon Dynamite" <br>
 				}
 			</th>
-			<th>A JSON object holding data about the user that was added, including an ID:
+			<th>A JSON object holding data about the user that was added, including an ID: <br>
 				{
-					id:22,
-					name: "ND4life",
-					favorites: "Napoleon Dynamite"
+					id:22, <br>
+					name: "ND4life", <br> 
+					favorites: "Napoleon Dynamite" <br>
 				}
 			</th>
 		</tr>
