@@ -8,52 +8,145 @@ app.use(bodyParser.json());
 
 let movies = [
     {
-        movie: 'Harry Potter and the Sorcerer"s Stone',
-        director: 'Chris Columbus',
-        genre: 'Fantasy'
+        movie: 'Silver Linings Playbook',
+        actors: {
+            name: 'Jennifer Lawrence',
+            name: 'Bradley Cooper'
+        },
+        director: 'David O. Russell',
+        genre: {
+            type: 'Comedy',
+            type: 'Drama',
+            type: 'Romance'
+        }
     },
 
     {
-        movie: 'Harry Potter and the Chamber of Secrets',
-        director: 'Chris Columbus',
-        genre: 'Fantasy'
+        movie: 'About Time',
+        actors: {
+            name: 'Rachel McAdams',
+            name: 'Domhall Gleeson'
+        },
+        director: 'Richard Curtis',
+        genre: {
+            type: 'Comedy',
+            type: 'Drama',
+            type: 'Romance',
+            type: 'Fantasy',
+            type: 'Sci-Fi'
+        }
     },
 
     {
-        movie: 'Harry Potter and the Prisoner of Azkaban',
-        director: 'Alfonso Cuarón',
-        genre: 'Fantasy'
+        movie: 'Me Before You',
+        actors: {
+            name: 'Emilia Clarke',
+            name: 'Sam Clafin'
+        },
+        director: 'Thea Sharrock',
+        genre: {
+            type: 'Drama',
+            type: 'Romance'
+        }
     },
 
     {
-        movie: 'Harry Potter and the Goblet of Fire',
-        director: 'Mike Newell',
-        genre: 'Fantasy'
+        movie: 'Joy',
+        actors: {
+            name: 'Jennifer Lawrence',
+            name: 'Bradley Cooper'
+        },
+        director: 'David O. Russell',
+        genre: {
+            type: 'Biography',
+            type: 'Drama',
+        }
     },
 
     {
-        movie: 'Harry Potter and the Order of the Phoenix',
-        director: 'David Yates',
-        genre: 'Fantasy'
+        movie: 'American Hustle',
+        actors: {
+            name: 'Jennifer Lawrence',
+            name: 'Bradley Cooper',
+            name: 'Amy Adams',
+            name: 'Christian Bale'
+        },
+        director: 'David O. Russell',
+        genre: {
+            type: 'Crime',
+            type: 'Drama',
+        }
     },
 
     {
-        movie: 'Harry Potter and the Half-Blood Prince',
-        director: 'David Yates',
-        genre: 'Fantasy'
+        movie: 'House at the End of the Street',
+        actors: {
+            name: 'Jennifer Lawrence',
+            name: 'Max Thieriot'
+        },
+        director: 'Mark Tonderai',
+        genre: {
+            type: 'Drama',
+            type: 'Horror',
+            type: 'Thriller'
+        }
     },
 
     {
-        movie: 'Harry Potter and the Deathly Hallows - Part 1',
-        director: 'David Yates',
-        genre: 'Fantasy'
+        movie: 'The Hunger Games',
+        actors: {
+            name: 'Jennifer Lawrence',
+            name: 'Josh Hutcherson',
+            name: 'Liam Hemsworth'
+        },
+        director: 'Gary Ross',
+        genre: {
+            type: 'Action',
+            type: 'Adventure',
+            type: 'Sci-Fi',
+            type: 'Thriller'
+        }
     },
 
     {
-        movie: 'Harry Potter and the Deathly Hallows - Part 2',
-        director: 'David Yates',
-        genre: 'Fantasy'
-    }
+        movie: 'Winter"s Bone',
+        actors: {
+            name: 'Jennifer Lawrence',
+            name: 'John Hawkes'
+        },
+        director: 'Debra Granik',
+        genre: {
+            type: 'Drama',
+            type: 'Mystery'
+        }
+    },
+
+    {
+        movie: 'The Edge of Seventeen',
+        actors: {
+            name: 'Hailee Steinfeld',
+            name: 'Haley Lu Richardson'
+        },
+        director: 'Kelly Fremon Craig',
+        genre: {
+            type: 'Comedy',
+            type: 'Drama'
+        }
+    },
+
+    {
+        movie: 'Someone Great',
+        actors: {
+            name: 'Gina Rodriguez',
+            name: 'Brittany Snow',
+            name: 'DeWanda Wise'
+        },
+        director: 'Jennifer Kaytin Robinson',
+        genre: {
+            type: 'Comedy',
+            type: 'Romance'
+        }
+    },
 ];
 
 let users = [
@@ -61,8 +154,8 @@ let users = [
         id: 1,
         name: 'Jessica Drake',
         favorites: {
-            movie: 'Harry Potter and the Sorcerer"s Stone',
-            movie: 'Harry Potter and the Half-Blood Prince',
+            movie: 'Silver Linings Playbook',
+            movie: 'Someone Great'
         }
     },
 
@@ -70,8 +163,8 @@ let users = [
         id: 2,
         name: 'Ben Cohen',
         favorites: {
-            movie: 'Harry Potter and the Order of the Phoenix',
-            movie: 'Harry Potter and the Chamber of Secrets',
+            movie: 'The Hunger Games',
+            movie: 'House at the End of the Street'
         }
     },
 
@@ -79,8 +172,8 @@ let users = [
         id: 3,
         name: 'Lisa Downing',
         favorites: {
-            movie: 'Harry Potter and the Prisoner of Azkaban',
-            movie: 'Harry Potter and the Globet of Fire',
+            movie: 'The Edge of Seventeen',
+            movie: 'Me Before You'
         }
     },
 ]
