@@ -194,27 +194,37 @@ app.get('/movies/:movie', (req, res) => {
 //Gets the list of data about ALL directors
 
 app.get('/directors', (req, res) => {
-    res.json(directors);
+    res.send('All directors works');
 });
 
 //Gets the data about a single director, by name
 
 app.get('/directors/:name', (req, res) => {
-    res.json(directors.find((directors) =>
-        { return directors.name === req.params.name }));
+    res.send('Single director works');
 });
 
 //Gets the list of data about ALL genres
 
 app.get('/genres', (req, res) => {
-    res.json(genres);
+    res.send('All genres work');
 });
 
 //Gets the data about a single genre, by name
 
 app.get('/genres/:name', (req, res) => {
-    res.json(genres.find((genres) => 
-        { return genres.name === req.params.name }));
+    res.send('Single genre works');
+});
+
+//Gets the list of data about ALL users
+
+app.get('/users', (req, res) => {
+    res.send('All users work');
+});
+
+//Gets the data about a single user, by name
+
+app.get('/users/:name', (req, res) => {
+    res.send('Single users works');
 });
 
 //Adds data for a new user to our list of users
