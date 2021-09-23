@@ -9,143 +9,72 @@ app.use(bodyParser.json());
 let movies = [
     {
         movie: 'Silver Linings Playbook',
-        actors: {
-            name: 'Jennifer Lawrence',
-            name: 'Bradley Cooper'
-        },
+        actor: 'Jennifer Lawrence',
         director: 'David O. Russell',
-        genre: {
-            type: 'Comedy',
-            type: 'Drama',
-            type: 'Romance'
-        }
+        genre: 'Romance'
     },
 
     {
         movie: 'About Time',
-        actors: {
-            name: 'Rachel McAdams',
-            name: 'Domhall Gleeson'
-        },
+        actor: 'Rachel McAdams',
         director: 'Richard Curtis',
-        genre: {
-            type: 'Comedy',
-            type: 'Drama',
-            type: 'Romance',
-            type: 'Fantasy',
-            type: 'Sci-Fi'
-        }
+        genre: 'Fantasy'
     },
 
     {
         movie: 'Me Before You',
-        actors: {
-            name: 'Emilia Clarke',
-            name: 'Sam Clafin'
-        },
+        actor: 'Emilia Clarke',
         director: 'Thea Sharrock',
-        genre: {
-            type: 'Drama',
-            type: 'Romance'
-        }
+        genre: 'Romance'
     },
 
     {
         movie: 'Joy',
-        actors: {
-            name: 'Jennifer Lawrence',
-            name: 'Bradley Cooper'
-        },
+        actor: 'Jennifer Lawrence',
         director: 'David O. Russell',
-        genre: {
-            type: 'Biography',
-            type: 'Drama',
-        }
+        genre: 'Biography'
     },
 
     {
         movie: 'American Hustle',
-        actors: {
-            name: 'Jennifer Lawrence',
-            name: 'Bradley Cooper',
-            name: 'Amy Adams',
-            name: 'Christian Bale'
-        },
+        actor: 'Jennifer Lawrence',
         director: 'David O. Russell',
-        genre: {
-            type: 'Crime',
-            type: 'Drama',
-        }
+        genre: 'Crime'
     },
 
     {
         movie: 'House at the End of the Street',
-        actors: {
-            name: 'Jennifer Lawrence',
-            name: 'Max Thieriot'
-        },
+        actor: 'Jennifer Lawrence',
         director: 'Mark Tonderai',
-        genre: {
-            type: 'Drama',
-            type: 'Horror',
-            type: 'Thriller'
-        }
+        genre: 'Thriller'
     },
 
     {
         movie: 'The Hunger Games',
-        actors: {
-            name: 'Jennifer Lawrence',
-            name: 'Josh Hutcherson',
-            name: 'Liam Hemsworth'
-        },
+        actor: 'Jennifer Lawrence',
         director: 'Gary Ross',
-        genre: {
-            type: 'Action',
-            type: 'Adventure',
-            type: 'Sci-Fi',
-            type: 'Thriller'
-        }
+        genre: 'Adventure',
     },
 
     {
         movie: 'Winter"s Bone',
-        actors: {
-            name: 'Jennifer Lawrence',
-            name: 'John Hawkes'
-        },
+        actor: 'Jennifer Lawrence',
         director: 'Debra Granik',
-        genre: {
-            type: 'Drama',
-            type: 'Mystery'
-        }
+        genre: 'Mystery'
     },
 
     {
         movie: 'The Edge of Seventeen',
-        actors: {
-            name: 'Hailee Steinfeld',
-            name: 'Haley Lu Richardson'
-        },
+        actor: 'Hailee Steinfeld',
         director: 'Kelly Fremon Craig',
-        genre: {
-            type: 'Comedy',
-            type: 'Drama'
-        }
+        genre: 'Comedy'
     },
 
     {
         movie: 'Someone Great',
-        actors: {
-            name: 'Gina Rodriguez',
-            name: 'Brittany Snow',
-            name: 'DeWanda Wise'
-        },
+        actor: 'Gina Rodriguez',
         director: 'Jennifer Kaytin Robinson',
-        genre: {
-            type: 'Comedy',
-            type: 'Romance'
-        }
+        genre:  'Comedy'
     },
 ];
 
