@@ -191,6 +191,18 @@ app.get('/movies/:movie', (req, res) => {
         { return movies.movie === req.params.movie }));
 });
 
+//Gets the list of data about ALL actors
+
+app.get('/actors', (req, res) => {
+    res.send('All actors works');
+});
+
+//Gets the data about a single actor, by name
+
+app.get('/actors/:name', (req, res) => {
+    res.send('Single actor works');
+});
+
 //Gets the list of data about ALL directors
 
 app.get('/directors', (req, res) => {
