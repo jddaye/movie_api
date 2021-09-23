@@ -215,6 +215,18 @@ app.get('/genres/:name', (req, res) => {
     res.send('Single genre works');
 });
 
+//Gets the list of data about ALL users
+
+app.get('/users', (req, res) => {
+    res.send('All users works');
+});
+
+//Gets the data about a single user, by name
+
+app.get('/users/:name', (req, res) => {
+    res.send('Single user works');
+});
+
 //Adds data for a new user to our list of users
 
 app.post('/users', (req, res) => {
