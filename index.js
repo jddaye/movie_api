@@ -194,37 +194,27 @@ app.get('/movies/:movie', (req, res) => {
 //Gets the list of data about ALL directors
 
 app.get('/directors', (req, res) => {
-    res.send('All directors works');
+    res.json(directors);
 });
 
 //Gets the data about a single director, by name
 
 app.get('/directors/:name', (req, res) => {
-    res.send('Single director works');
+    res.json(directors.find((directors) =>
+        { return directors.name === req.params.name }));
 });
 
 //Gets the list of data about ALL genres
 
 app.get('/genres', (req, res) => {
-    res.send('All genres work');
+    res.json(genres);
 });
 
 //Gets the data about a single genre, by name
 
 app.get('/genres/:name', (req, res) => {
-    res.send('Single genre works');
-});
-
-//Gets the list of data about ALL users
-
-app.get('/users', (req, res) => {
-    res.send('All users work');
-});
-
-//Gets the data about a single user, by name
-
-app.get('/users/:name', (req, res) => {
-    res.send('Single users works');
+    res.json(genres.find((genres) => 
+        { return genres.name === req.params.name }));
 });
 
 //Adds data for a new user to our list of users
@@ -288,5 +278,3 @@ app.use((err, req, res, next) => {
 app.listen(8080, () => {
     console.log('Your app is listening on port 8080');
 });
-
-//update
