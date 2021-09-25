@@ -11,7 +11,7 @@ let movies = [
         movie: 'Silver Linings Playbook',
         actor: 'Jennifer Lawrence',
         director: 'David O. Russell',
-        genre: 'Romance'
+        genre: 'Drama'
     },
 
     {
@@ -40,27 +40,6 @@ let movies = [
         actor: 'Jennifer Lawrence',
         director: 'David O. Russell',
         genre: 'Crime'
-    },
-
-    {
-        movie: 'House at the End of the Street',
-        actor: 'Jennifer Lawrence',
-        director: 'Mark Tonderai',
-        genre: 'Thriller'
-    },
-
-    {
-        movie: 'The Hunger Games',
-        actor: 'Jennifer Lawrence',
-        director: 'Gary Ross',
-        genre: 'Adventure',
-    },
-
-    {
-        movie: 'Winter"s Bone',
-        actor: 'Jennifer Lawrence',
-        director: 'Debra Granik',
-        genre: 'Mystery'
     },
 
     {
