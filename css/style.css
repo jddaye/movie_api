@@ -2,3 +2,11 @@ td, th {
     border: 10px solid black;
     padding: 0.5rem;
   }
+
+.indent {
+    margin-left: 20px;
+}
+
+.double-indent {
+    margin-left: 40px;
+}
