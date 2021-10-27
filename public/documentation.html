@@ -32,11 +32,29 @@
 			</tr>
 
 			<tr>
-				<td>Get data about a single movie by name</td>
-				<td>/movies/[Name]</td>
+				<td>Get data about a single movie by title</td>
+				<td>/movies/[Title]</td>
 				<td>Get</td>
 				<td>None</td>
-				<td>A JSON object holding data about a single movie, containing the name, director, and genre</td>
+				<td>A JSON object holding data about a single movie, containing the name, director, and genre <br>
+					Example: <br>
+					<p>
+						{
+							<span class="indent">"_id": objectId,</span><br>
+							<span class="indent">"Title": "Movie Title",</span><br>
+							<span class="indent">"Description": "Movie Description",</span><br>
+							<span class="indent">"Genre":</span><br>
+							<span class="double-indent">"Name": "Genre's Name",</span><br>
+							<span class="double-indent">"Description": "Genre's Description",</span><br>
+							<span class="indent">"Director":</span><br>
+							<span class="double-indent">"Name": "Director's Name",</span><br>
+							<span class="double-indent">"Bio": "Director's Bio",</span><br>
+							<span class="indent">"Actors": ["Actor A", "Actor B"],</span><br>
+							<span class="indent">"imageUrl": "www.movielink.com",</span><br>
+							<span class="indent">"Featured": Boolean</span>
+						}
+					</p>
+				</td>
 			</tr>
 
 			<tr>
@@ -52,7 +70,15 @@
 				<td>/directors/[Name]</td>
 				<td>Get</td>
 				<td>None</td>
-				<td>A JSON object holding data about a single director, containing a bio, birth year, and death year</td>
+				<td>A JSON object holding data about a single director, containing a bio <br>
+					Example: <br>
+					<p>
+						{<br>
+						<span class="indent">"Name": "Director's Name",</span>
+						<span class="indent">"Bio": "Director's Bio"</span>
+					}
+					</p>
+				</td>
 			</tr>
 
 			<tr>
@@ -68,47 +94,100 @@
 				<td>/genres/[Name]</td>
 				<td>Get</td>
 				<td>None</td>
-				<td>A JSON object holding data about a single genre, containing a description</td>
+				<td>A JSON object holding data about a single genre, containing a description <br>
+					Example: <br>
+					<p>
+						{<br>
+							<span class="indent">"Name": "Genre's Name",</span>
+							<span class="indent">"Description": "Genre's Description"</span>
+						}
+					</p>
+				</td>
 			</tr>
 
 			<tr>
 				<td>Add a user</td>
 				<td>/users</td>
 				<ttd>Post</td>
-				<td>A JSON object holding data about the student to add, structured like: <br>
-					{
-						name: "ND4life", <br>
-						favorites: "Napoleon Dynamite" <br>
-					}
+				<td>A JSON object holding data about the user to add, structured like: <br>
+					Example: <br>
+					<p>
+						{
+							<span class="indent">"Name": "Princess Peach",</span>
+							<span class="indent">"Username": "princesspeach",</span>
+							<span class="indent">"Password": "peachy1519",</span>
+							<span class="indent">"Email": "peachy1519@gmail.com",</span>
+							<span class="indent">"Birthday": "02/02/1997"</span>
+						}
+					</p>
 				</td>
 				<td>A JSON object holding data about the user that was added, including an ID: <br>
-					{
-						id:22, <br>
-						name: "ND4life", <br> 
-						favorites: "Napoleon Dynamite" <br>
-					}
+					Example: <br>
+					<p>
+						{
+							<span class="indent">"_id": ObjectId,</span>
+							<span class="indent">"Name": "Princess Peach",</span>
+							<span class="indent">"Username": "princesspeach",</span>
+							<span class="indent">"Password": "peachy1519",</span>
+							<span class="indent">"Email": "peachy1519@gmail.com",</span>
+							<span class="indent">"Birthday": "02/02/1997"</span>
+						}
+					</p>
 				</td>
 			</tr>
 
 			<tr>
 				<td>Update a user</td>
-				<td>/users/[Name]</td>
+				<td>/users/[Username]</td>
 				<td>Put</td>
-				<td>None</td>
-				<td>A text message indicating the user that was updated</td>
+				<td>A JSON object holding data about the user to update <br>
+					Example: <br>
+					<p>
+						{ <br>
+							<span class="indent">"Email": "peachpuff1519@gmail.com"</span>
+						}
+					</p>
+				</td>
+				<td>A JSON object holding successfully updated user data <br>
+					Example: <br>
+					<p>
+						{
+							<span class="indent">"_id": ObjectId,</span>
+							<span class="indent">"Name": "Princess Peach",</span>
+							<span class="indent">"Username": "princesspeach",</span>
+							<span class="indent">"Password": "peachy1519",</span>
+							<span class="indent">"Email": "peachpuff1519@gmail.com",</span>
+							<span class="indent">"Birthday": "02/02/1997"</span>
+						}
+					</p>
+
+				</td>
 			</tr>
 
 			<tr>
 				<td>Add movies to user's favorites</td>
-				<td>/users/[Name]/[Favorites]</td>
-				<td>Get</td>
+				<td>/users/[Userame]/movies[MovieID]</td>
+				<td>Post</td>
 				<td>None</td>
-				<td>A JSON objecy holding data about the user's favorite movie</td>
+				<td>A JSON object holding data about the user's favorite movie <br>
+					Example: <br>
+					<p>
+						{
+							<span class="indent">"_id": ObjectId,</span>
+							<span class="indent">"Name": "Princess Peach",</span>
+							<span class="indent">"Username": "princesspeach",</span>
+							<span class="indent">"Password": "peachy1519",</span>
+							<span class="indent">"Email": "peachpuff1519@gmail.com",</span>
+							<span class="indent">"Birthday": "02/02/1997"</span>
+							<span class="indent">"Favorite Movies": [MovieID]</span>
+						}
+					</p>
+				</td>
 			</tr>
 
 			<tr>
 				<td>Remove movies from user's favorites</td>
-				<td>/users/[Name]/[Favorites]</td>
+				<td>/users/[Userame]/movies[MovieID]</td>
 				<td>Delete</td>
 				<td>None</td>
 				<td>A text message indicating whether the movie was successfully removed</td>
