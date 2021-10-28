@@ -1,17 +1,24 @@
-const express = require('express'),
-    bodyParser = require('body-parser'),
-    uuid = ('uuid');
+const express = require('express');
+const morgan = require('morgan');
+const bodyParser = require('body-parser');
+const uuid = ('uuid');
+
+const mongoose = require('mongoose');
+const Models = require('./models.js');
+
+const Movies = Models.Movie;
+const Users = Models.User;
+const Directors = Models.Director;
+const Actors = Models.Actor;
+const Genres = Models.Genre;
 
 const app = express();
+
+app.use(morgan('common'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-const mongoose = require('mongoose');
-const Models = require('./models.js'),
-
-const Movies = Models.Movie;
-const Users = Models.User;
 
 mongoose.connect('mongodb://localhost:27017/collectionMovies', {useNewUrlParser: true, useUnifiedTopology: true});
 
