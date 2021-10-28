@@ -25,29 +25,29 @@ mongoose.connect('mongodb://localhost:27017/moviesAPI', {useNewUrlParser: true, 
 
 //Gets the list of data about ALL movies
 
-app.get('/movies', (req, res) => {
-    Movies.find()
-        .then((movies) => {
-            res.status(201).json(movies);
-        })
-        .catch((err) => {
-            console.error(err);
-            res.status(500).send('Error: ' + err);
-        });
-});
+// app.get('/movies', (req, res) => {
+//     Movies.find()
+//         .then((movies) => {
+//             res.status(201).json(movies);
+//         })
+//         .catch((err) => {
+//             console.error(err);
+//             res.status(500).send('Error: ' + err);
+//         });
+// });
 
-//Gets the data about a single movie, by title
+// //Gets the data about a single movie, by title
 
-app.get('/movies/:Movie', (req, res) => {
-    Movies.findOne({Title: req.params.Title})
-        .then((movies) => {
-            res.json(movies);
-        })
-        .catch((err) => {
-            console.error(err);
-            res.status(500).send('Error: ' + err);
-        });
-});
+// app.get('/movies/:Movie', (req, res) => {
+//     Movies.findOne({Title: req.params.Title})
+//         .then((movies) => {
+//             res.json(movies);
+//         })
+//         .catch((err) => {
+//             console.error(err);
+//             res.status(500).send('Error: ' + err);
+//         });
+// });
 
 // //Gets the list of data about ALL actors
 
