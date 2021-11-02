@@ -41,7 +41,7 @@ app.get('/movies', (req, res) => {
 
 //Gets the data about a single movie, by title
 
-app.get('/movies/:Movie', (req, res) => {
+app.get('/movies/:Title', (req, res) => {
     Movies.findOne({Title: req.params.Title})
         .then((movies) => {
             res.json(movies);
