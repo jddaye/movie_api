@@ -1,0 +1,19 @@
+{"_id":{"$oid":"618d3f4f020f12e9c747865c"},"Name":"Jennifer Lawrence","Movies":["American Hustle","Silver Linings Playbook","Joy"]}
+{"_id":{"$oid":"618d3fc9020f12e9c747865d"},"Name":"Bradley Cooper","Movies":["American Hustle","Silver Linings Playbook","Joy"]}
+{"_id":{"$oid":"618d405c020f12e9c747865e"},"Name":"Rachel McAdams","Movies":"About Time"}
+{"_id":{"$oid":"618d40db020f12e9c747865f"},"Name":"Domhnall Gleeson","Movies":"About Time"}
+{"_id":{"$oid":"618d416f020f12e9c7478660"},"Name":"Emilia Clarke","Movies":["Me Before You","Last Christmas"]}
+{"_id":{"$oid":"618d42d6020f12e9c7478661"},"Name":"Sam Claflin","Movies":"Me Before You"}
+{"_id":{"$oid":"618d4325020f12e9c7478662"},"Name":"Gina Rodriguez","Movies":"Someone Great"}
+{"_id":{"$oid":"618d434d020f12e9c7478663"},"Name":"DeWanda Wise","Movies":"Someone Great"}
+{"_id":{"$oid":"618d4367020f12e9c7478664"},"Name":"Brittany Snow","Movies":"Someone Great"}
+{"_id":{"$oid":"618d4400020f12e9c7478665"},"Name":"Hailee Steinfeld","Movies":"Edge of Seventeen"}
+{"_id":{"$oid":"618d4404020f12e9c7478666"},"Name":"Haley Lu Richardson","Movies":"Edge of Seventeen"}
+{"_id":{"$oid":"618d44a1020f12e9c7478667"},"Name":"Christian Bale","Movies":"American Hustle"}
+{"_id":{"$oid":"618d44a4020f12e9c7478668"},"Name":"Amy Adams","Movies":"American Hustle"}
+{"_id":{"$oid":"618d44a8020f12e9c7478669"},"Name":"Constance Wu","Moviies":"Crazy Rich Asians"}
+{"_id":{"$oid":"618d4500020f12e9c747866a"},"Name":"Henry Golding","Movies":"Last Christmas"}
+{"_id":{"$oid":"618d4503020f12e9c747866b"},"Name":"Emma Roberts","Movies":"Holidate"}
+{"_id":{"$oid":"618d4526020f12e9c747866c"},"Name":"Luke Bracey","Movies":"Holidate"}
+{"_id":{"$oid":"618d45c7020f12e9c747866d"},"Name":"Nina Dobrev","Movies":"Love Hard"}
+{"_id":{"$oid":"618d45c9020f12e9c747866e"},"Name":"Jimmy O. Yang","Movies":"Love Hard"}

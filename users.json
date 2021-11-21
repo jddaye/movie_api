@@ -1,0 +1,6 @@
+{"_id":{"$oid":"61959d1e1d2c9c0c26dbf734"},"Username":"Take4","Password":"4thtime","Email":"fourth@four.com","Birthday":{"$date":"2004-04-04T00:00:00Z"},"FavorieMovies":[],"__v":0}
+{"_id":{"$oid":"619907a4afad8930ca594a25"},"Username":"PlayerOne.1","Password":"1234","Email":"one@one.com","Birthday":{"$date":"2000-01-01T00:00:00Z"},"FavorieMovies":[],"__v":0}
+{"_id":{"$oid":"619907c1afad8930ca594a28"},"Username":"PersonTwo.1","Password":"abcd","Email":"two@two.com","Birthday":{"$date":"2000-02-02T00:00:00Z"},"FavorieMovies":[],"__v":0}
+{"_id":{"$oid":"619907deafad8930ca594a2b"},"Username":"SubjectThree.1","Password":"1a2b","Email":"three@three.com","Birthday":{"$date":"2000-03-03T00:00:00Z"},"FavorieMovies":[],"__v":0}
+{"_id":{"$oid":"61990804afad8930ca594a2e"},"Username":"Fourth.1","Password":"4444","Email":"four@four.com","Birthday":{"$date":"2000-04-04T00:00:00Z"},"FavorieMovies":[],"__v":0}
+{"_id":{"$oid":"61990821afad8930ca594a31"},"Username":"No. 5.1","Password":"cinco","Email":"five@five.com","Birthday":{"$date":"2000-05-05T00:00:00Z"},"FavorieMovies":[],"__v":0}
