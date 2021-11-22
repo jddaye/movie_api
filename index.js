@@ -14,6 +14,8 @@ const Directors = Models.Director;
 const Actors = Models.Actor;
 const Genres = Models.Genre;
 
+const {check, validationResult} = require('express-validator');
+
 mongoose.connect('mongodb://localhost:27017/moviesAPI', {useNewUrlParser: true, useUnifiedTopology: true});
 
 //mongoose.connect(process.env.CONNECTION_URI, {useNewUrlParser: true, useUnifiedTopology: true});
@@ -21,7 +23,7 @@ mongoose.connect('mongodb://localhost:27017/moviesAPI', {useNewUrlParser: true, 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.use(morgan('common'));
+
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
@@ -34,13 +36,20 @@ let auth = require('./auth')(app);
 const passport = require('passport');
 require('./passport');
 
-const {check, validationResult} = require('express-validator');
+app.use(morgan('common'));
+
 
 // Welcome page
 
 app.get('/', (req, res) => {
     res.send('Welcome to myFlix!');
   });
+
+// Documentation
+
+app.get('documentation.html', (req, res) => {
+    res.sendFile('public/documentation.html', {root: __dirname});
+})
 
 // Gets the list of data about ALL movies
 
