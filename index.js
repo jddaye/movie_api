@@ -21,8 +21,8 @@ const {check, validationResult} = require('express-validator');
 
 
 //Online Host
-mongoose.set('bufferCommands', false);
 mongoose.connect('process.env.CONNECTION_URI', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.set('bufferCommands', false);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
