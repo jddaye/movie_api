@@ -19,7 +19,9 @@ const {check, validationResult} = require('express-validator');
 // Local Host
 //mongoose.connect('mongodb://localhost:27017/moviesAPI', {useNewUrlParser: true, useUnifiedTopology: true});
 
+
 //Online Host
+mongoose.set('bufferCommands', false);
 mongoose.connect(process.env.CONNECTION_URI, {useNewUrlParser: true, useUnifiedTopology: true});
 
 app.use(bodyParser.json());
