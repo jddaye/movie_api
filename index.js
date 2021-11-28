@@ -57,14 +57,14 @@ app.get('documentation.html', (req, res) => {
 
 // Gets the list of data about ALL movies
 
-app.get('/movies', (req, res) => {
+app.get("/movies", function (req, res) {
     Movies.find()
-      .then((movies) => {
+      .then(function (movies) {
         res.status(201).json(movies);
       })
-      .catch((error) => {
+      .catch(function (error) {
         console.error(error);
-        res.status(500).send('Error: ' + error);
+        res.status(500).send("Error: " + error);
       });
   });
 
