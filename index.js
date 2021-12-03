@@ -21,9 +21,10 @@ const {check, validationResult} = require('express-validator');
 
 
 //Online Host
-//mongoose.set('bufferCommands', false);
-mongoose.connect('process.env.CONNECTION_URI', {useNewUrlParser: true, useUnifiedTopology: true}).
-catch(error => console.log(error));
+mongoose.set('bufferCommands', false);
+(async() => {
+    await mongoose.connect('mongodb+srv://jddaye:Belle416@myflixdb.tpvxp.mongodb.net/myFlixDB?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+})();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
