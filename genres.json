@@ -1,0 +1,6 @@
+{"_id":{"$oid":"6178211bad9f7a2ca1f5346f"},"Name":"Romance","Description":"Stories that focus on passion, emotion, and the affectionate romantic involvement of the main characters and the journey that their love takes them through dating, courtship, or marriage."}
+{"_id":{"$oid":"61782170ad9f7a2ca1f53470"},"Name":"Drama","Description":"Stories that focus on authentic, realisitic, and relatable characters or circumstances as the main character struggles with conflicts between themselves, others, or the forces of nature."}
+{"_id":{"$oid":"617821e3ad9f7a2ca1f53471"},"Name":"Fantasy","Description":"Stories that involve some element of surrealisitc themes, including magic, supernatural events, legends, or fairy tales, requiring the main character to undergo a mystical experience."}
+{"_id":{"$oid":"61782244ad9f7a2ca1f53472"},"Name":"Comedy","Description":"Stories that focus on making the audience laugh through exaggerated characteristics for humorous effects."}
+{"_id":{"$oid":"61782295ad9f7a2ca1f53473"},"Name":"Crime","Description":"Stories that focus on the actions of a criminial mastermind, recounting the events that lead to, and the inevitable fall of, the criminal."}
+{"_id":{"$oid":"617822e9ad9f7a2ca1f53474"},"Name":"Biography","Description":"Stories that are a dramatization of the real life events of a non-fiction person."}
