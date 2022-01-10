@@ -60,7 +60,16 @@ app.get('documentation.html', (req, res) => {
 // Gets the list of data about ALL movies
 
 app.get("/movies", function (req, res) {
-    Movies.find()
+    Movies.aggregate([
+        { $lookup: 
+            {
+                from: 'Genre',
+                localField: 'Genre',
+                foreignField: '_id',
+                as: 'Genres'
+            }
+        }
+    ])
       .then(function (movies) {
         res.status(201).json(movies);
       })
