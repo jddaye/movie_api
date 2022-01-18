@@ -59,25 +59,19 @@ app.get('documentation.html', (req, res) => {
 
 // Gets the list of data about ALL movies
 
-app.get("/movies", function (req, res) {
-    Movies.aggregate([
-        { $lookup: 
-            {
-                from: 'Genre',
-                localField: 'Genre',
-                foreignField: '_id',
-                as: 'Genres'
-            }
-        }
-    ])
-      .then(function (movies) {
+// Gets the list of data about ALL movies
+
+app.get('/movies', (req, res) => {
+    Movies.find()
+      .then((movies) => {
         res.status(201).json(movies);
       })
-      .catch(function (error) {
+      .catch((error) => {
         console.error(error);
-        res.status(500).send("Error: " + error);
+        res.status(500).send('Error: ' + error);
       });
   });
+
 
 //Gets the data about a single movie, by name
 
