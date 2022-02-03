@@ -35,18 +35,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 const cors = require('cors'); //!!!!!Make sure this is before any route middleware
-let allowedOrigins= ['http://localhost:8080', 'http://localhost:1234', 'https://myflyxs.netlify.app'];
 
-app.use(cors({
-    origin: (origin, callback) => {
-        if (!origin) return callback(null, true);
-        if (allowedOrigins.indexOf(origin) === -1) {
-            let message = 'The CORS policy for this application does not allow access from origin ' + origin;
-            return callback(newError(message), false);
-        }
-        return callback(null, true);
-    }
-}));
+app.use(cors());
 
 let auth = require('./auth')(app);
 
